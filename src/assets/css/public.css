@@ -1,0 +1,14 @@
+.clearfix::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.clearfix {
+  zoom: 1;
+  /* IE 兼容 */
+}
+
+[v-cloak] {
+  display: none !important;
+}

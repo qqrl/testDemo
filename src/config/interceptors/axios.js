@@ -49,7 +49,11 @@ export function responseSuccessFunc(responseObj) {
       // 比如最常见的授权过期跳登录
       // 特定弹窗
       // 跳转特定页面等
-      console.log('未登录')
+      IVIEW.Message.config({
+        top: 50,
+        duration: 5
+      });
+      IVIEW.Message.info('未登录');
       if (responseObj.data.message === '尚未登录') {
         // location.href = 'https://www.xrcloud.net/login' // 这里的路径也可以放到全局配置里
       }
